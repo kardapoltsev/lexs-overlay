@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layman>
+  <overlay contact="alexey.kardapoltsev@gmail.com" name="lexs-overlay" src="git://github.com/kardapoltsev/lexs-overlay.git" status="unofficial" type="git">
+    <link>https://github.com/kardapoltsev/lexs-overlay</link>
+    <description>Some ebuilds that I use</description>
+  </overlay>
+</layman>
