@@ -19,17 +19,20 @@ SRC_URI=" http://download-cf.jetbrains.com/${MY_PN}/${MY_PN}IC-${MY_PV}.tar.gz"
 LICENSE="IntelliJ-IDEA"
 IUSE=""
 KEYWORDS="~x86 ~amd64"
-S="${WORKDIR}/idea-IU-135.909"
+S="${WORKDIR}/idea-IC-139.659.2"
 
 RDEPEND="!dev-util/idea-ultimate"
 
 src_install() {
-	local dir="/opt/${P}"
-    insinto "${dir}"
+
+	local install_dir="/opt/${P}"
+    insinto "${install_dir}"
     doins -r *
-	fperms 755 "${dir}/bin/${MY_PN}.sh"
-	fperms 755 "${dir}/bin/fsnotifier64"
-	fperms 755 "${dir}/bin/fsnotifier"
+
+	fperms 755 "${install_dir}/bin/${MY_PN}.sh"
+	fperms 755 "${install_dir}/bin/fsnotifier64"
+	fperms 755 "${install_dir}/bin/fsnotifier"
+	
 	local exe=${MY_PN}-${SLOT}
 	local icon=${exe}.png
 	newicon "bin/${MY_PN}.png" ${icon}
