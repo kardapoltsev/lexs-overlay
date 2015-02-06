@@ -19,7 +19,7 @@ SRC_URI=" http://download-cf.jetbrains.com/${MY_PN}/${MY_PN}IC-${MY_PV}.tar.gz"
 LICENSE="IntelliJ-IDEA"
 IUSE=""
 KEYWORDS="~x86 ~amd64"
-S="${WORKDIR}/idea-IC-139.1117"
+S="${WORKDIR}"'/idea-IC-139.1117.1'
 
 RDEPEND="!dev-util/idea-ultimate"
 
